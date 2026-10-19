@@ -1,0 +1,4 @@
+interface:
+  display_name: "PubMed策略"
+  short_description: "利用已确认相关PMID开发检索策略并保留开发和留出验证边界"
+  default_prompt: "用 $phd-pubmed 根据已确认的相关PMID开发并审计PubMed检索策略。"
