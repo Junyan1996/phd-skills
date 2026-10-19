@@ -1,0 +1,4 @@
+interface:
+  display_name: "引文与参考文献"
+  short_description: "核对论文身份与论点支持并整理可追溯的引文及参考文献文件"
+  default_prompt: "用 $phd-citation 核验正文论点的参考文献支持并整理引文。"
