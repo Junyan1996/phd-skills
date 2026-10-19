@@ -1,0 +1,4 @@
+interface:
+  display_name: "文献与研究现状"
+  short_description: "检索并综合生物遗传研究证据保留真实查询与研究版本边界"
+  default_prompt: "用 $phd-literature 检索并综合这个主题的研究现状，记录检索范围。"
