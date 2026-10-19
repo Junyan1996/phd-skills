@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文与开题预审"
+  short_description: "按可见证据预审论文或开题并给出有定位和优先级的修订建议"
+  default_prompt: "用 $phd-reviewer 预审这份稿件，区分实质问题与材料不足。"
