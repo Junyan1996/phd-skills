@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研配图"
+  short_description: "依据真实数据制作可编辑科研图并检查多面板布局与视觉完整性"
+  default_prompt: "用 $phd-figure 根据数据与科学问题制作可编辑的论文图并检查导出。"
