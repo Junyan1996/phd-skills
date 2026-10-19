@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文精读"
+  short_description: "按原文位置解读论文图表并在适用范围内制作中英文对照读本"
+  default_prompt: "用 $phd-reader 精读这篇论文，保留段落与图表来源定位。"
