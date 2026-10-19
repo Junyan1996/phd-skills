@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研选题"
+  short_description: "比较生物遗传研究方向的价值与可行性并设计最早的判别检验"
+  default_prompt: "用 $phd-topic 评估我的选题、关键风险与最小可行性检验。"
