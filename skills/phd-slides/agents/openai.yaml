@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术汇报"
+  short_description: "把论文结果或开题材料制作为有证据主线的演示文稿与讲稿"
+  default_prompt: "用 $phd-slides 将这些材料制作为适合汇报时长的PPTX并检查页面。"
