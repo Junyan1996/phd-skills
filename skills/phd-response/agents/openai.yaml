@@ -1,0 +1,4 @@
+interface:
+  display_name: "审稿回复"
+  short_description: "根据审稿意见和实际修订证据整理逐点回复及尚未完成的工作"
+  default_prompt: "用 $phd-response 根据审稿意见与已完成修订起草真实的逐点回复。"
