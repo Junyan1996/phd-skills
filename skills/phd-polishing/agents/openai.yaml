@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术润色与排版"
+  short_description: "修订学术中英文和论证结构并保留数值术语与科学不确定性"
+  default_prompt: "用 $phd-polishing 润色我的学术草稿并保留科学原意和限定。"
