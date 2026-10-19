@@ -1,0 +1,4 @@
+interface:
+  display_name: "硕博开题"
+  short_description: "为生物遗传方向硕博生整理有来源、有设计依据的开题研究计划"
+  default_prompt: "用 $phd-proposal 根据现有材料和学校要求起草可追溯的开题报告。"
