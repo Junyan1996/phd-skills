@@ -1,0 +1,4 @@
+interface:
+  display_name: "假说与研究设计"
+  short_description: "把生物学观察转成竞争假说、区分性预测和可检验的研究方案"
+  default_prompt: "用 $phd-hypothesis 将我的观察整理为可检验问题和竞争解释。"
