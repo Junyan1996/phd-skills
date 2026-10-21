@@ -23,7 +23,7 @@
 | [phd-reviewer](skills/phd-reviewer/SKILL.md) | 开题预审、投稿前审稿 | 按证据定位的问题、优先级与修订建议 |
 | [phd-response](skills/phd-response/SKILL.md) | 审稿回复、返修、意见冲突 | 逐点回复、修订映射、待办 |
 | [phd-pubmed](skills/phd-pubmed/SKILL.md) | 用已确认PMID开发并验证PubMed策略 | 候选词表、布尔式、留出验证记录 |
-| [phd-workflow](skills/phd-workflow/SKILL.md) | 跨阶段科研任务、项目续接 | 决策与状态记录、阶段产物、下一步 |
+| [phd-workflow](skills/phd-workflow/SKILL.md) | 跨阶段科研任务、项目续接 | 轻量状态、三文件计划、独立任务目录与证据续接 |
 
 ## 开始使用
 
@@ -51,6 +51,23 @@ python scripts/install.py --skill phd-proposal --skill phd-writing
 
 用 $phd-workflow 接续这个项目，读取已有状态，只推进尚未完成的阶段。
 ```
+
+`phd-workflow` 1.1 支持两种规模：普通续接沿用 `status.md`；长项目在 `.phd-workflow/<task-id>/` 中分开保存 `task_plan.md`（计划）、`findings.md`（证据）和 `progress.md`（执行记录）。同一项目多个任务明确指定ID，不按“最近修改”猜任务。没有自动循环或每次工具调用重复加载计划的钩子。
+
+```text
+用 $phd-workflow 管理任务 goat-proposal。
+先比较 papers 文件夹中已提供的论文，在 .phd-workflow/goat-proposal/ 保存计划、发现和进度。
+下次继续时先恢复该任务，只推进尚未完成的工作；重要新证据可以修订旧决定。
+```
+
+完整示例见[首次使用与续接](skills/phd-workflow/references/examples.md)。可选的标准库工具只初始化新任务/提供只读预览：
+
+```bash
+python skills/phd-workflow/scripts/state.py init --project-root ./my-research --task-id goat-proposal --title 山羊基因组开题
+python skills/phd-workflow/scripts/state.py show --project-root ./my-research --task-id goat-proposal
+```
+
+示例中的项目目录必须已存在；已有任务直接恢复，不重新初始化。此版本借鉴了planning-with-files的文件分工并针对科研重写，不要求同时安装两个技能。
 
 开题资料夹可选初始化（Python标准库，无网络）：
 
