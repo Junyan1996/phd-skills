@@ -1,4 +1,4 @@
 interface:
   display_name: "科研工作流"
   short_description: "协调并续接跨阶段科研任务保留既有决策和真实执行状态记录"
-  default_prompt: "用 $phd-workflow 读取现有项目状态并推进下一项未完成的科研任务。"
+  default_prompt: "用 $phd-workflow 选中本项目任务，恢复已有计划与证据，推进下一项未完成工作并按阶段保存进度。"
